@@ -151,8 +151,8 @@ const Home = () => {
       <div className="Footer flex flex-row h-[80px] w-full px-20 items-center justify-between border border-t-[#dddddd]">
         <p className=' text-base font-normal font-Mulish text-[#999999]'>© 2022 Escape Planner Pvt Ltd. All rights reserved</p>
         <div className='flex flex-row gap-[60px]'>
-          <Link to="terms-of-use" className=' text-base font-normal font-Mulish text-[#999999]'>Terms Of Use</Link>
-          <Link to="privacy-policy" className=' text-base font-normal font-Mulish text-[#999999]'>Privacy Policy</Link>
+          <Link to="/escapekar/terms-of-use" className=' text-base font-normal font-Mulish text-[#999999]'>Terms Of Use</Link>
+          <Link to="/escapekar/privacy-policy" className=' text-base font-normal font-Mulish text-[#999999]'>Privacy Policy</Link>
         </div>
       </div>
     </>
