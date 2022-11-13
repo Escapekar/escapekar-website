@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <div className="Home flex flex-col h-screen w-full px-20 justify-between bg-gradient-to-b from-[#E2FFF8] to-[#f1f1f1] ">
         <div className="Header flex flex-row justify-between items-center pt-9">
-          <a href="/" className=" cursor-pointer">
+          <a href="/escapekar" className=" cursor-pointer">
             <Logo />
           </a>
           <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[14px] px-[46px] rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
