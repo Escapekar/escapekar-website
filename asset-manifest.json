@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/escapekar/static/css/main.4d707d19.css",
-    "main.js": "/escapekar/static/js/main.17c856fa.js",
+    "main.js": "/escapekar/static/js/main.e5381a0a.js",
     "static/media/Map.png": "/escapekar/static/media/Map.5667eac54db855e28b6a.png",
     "static/media/Sunken.png": "/escapekar/static/media/Sunken.b8a03ff8dd4fb296f830.png",
     "static/media/Montreal.png": "/escapekar/static/media/Montreal.79bbb973b8bca6eb7cda.png",
@@ -10,10 +10,10 @@
     "static/media/SubscribeGraphic.png": "/escapekar/static/media/SubscribeGraphic.8859cae1c2fd5ba12851.png",
     "index.html": "/escapekar/index.html",
     "main.4d707d19.css.map": "/escapekar/static/css/main.4d707d19.css.map",
-    "main.17c856fa.js.map": "/escapekar/static/js/main.17c856fa.js.map"
+    "main.e5381a0a.js.map": "/escapekar/static/js/main.e5381a0a.js.map"
   },
   "entrypoints": [
     "static/css/main.4d707d19.css",
-    "static/js/main.17c856fa.js"
+    "static/js/main.e5381a0a.js"
   ]
 }
