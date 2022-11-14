@@ -8,9 +8,9 @@ const App = () => {
     <div className="App flex flex-col h-full box-border bg-[#f1f1f1]">
       <Router>
         <Routes>
-          <Route exact path="/escapekar" element={<Home />} />
-          <Route exact path="/escapekar/privacy-policy" element={<PrivacyPolicy />} />
-          <Route exact path="/escapekar/terms-of-use" element={<TermsOfUse />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route exact path="/terms-of-use" element={<TermsOfUse />} />
         </Routes>
       </Router>
     </div>

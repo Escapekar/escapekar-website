@@ -24,7 +24,7 @@ const TermsOfUse = () => {
     <div className='flex flex-col w-full h-screen'>
 
       <div className="Header flex flex-row h-[100px] w-full px-20 items-center justify-between bg-[#ffffff]" style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.06)' }}>
-        <a href="/escapekar" className=" cursor-pointer">
+        <a href="/" className=" cursor-pointer">
           <Logo />
         </a>
         <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[14px] px-[46px] rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
