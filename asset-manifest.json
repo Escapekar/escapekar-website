@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/escapekar/static/css/main.4d707d19.css",
-    "main.js": "/escapekar/static/js/main.0d212b52.js",
-    "static/media/Map.png": "/escapekar/static/media/Map.5667eac54db855e28b6a.png",
-    "static/media/Sunken.png": "/escapekar/static/media/Sunken.b8a03ff8dd4fb296f830.png",
-    "static/media/Montreal.png": "/escapekar/static/media/Montreal.79bbb973b8bca6eb7cda.png",
-    "static/media/WarmUpWarm.png": "/escapekar/static/media/WarmUpWarm.74abe2278977582370f4.png",
-    "static/media/Salar.png": "/escapekar/static/media/Salar.f092fb4f7557b18af0e1.png",
-    "static/media/SubscribeGraphic.png": "/escapekar/static/media/SubscribeGraphic.8859cae1c2fd5ba12851.png",
-    "index.html": "/escapekar/index.html",
-    "main.4d707d19.css.map": "/escapekar/static/css/main.4d707d19.css.map",
-    "main.0d212b52.js.map": "/escapekar/static/js/main.0d212b52.js.map"
+    "main.css": "/static/css/main.4d707d19.css",
+    "main.js": "/static/js/main.811710e6.js",
+    "static/media/Map.png": "/static/media/Map.5667eac54db855e28b6a.png",
+    "static/media/Sunken.png": "/static/media/Sunken.b8a03ff8dd4fb296f830.png",
+    "static/media/Montreal.png": "/static/media/Montreal.79bbb973b8bca6eb7cda.png",
+    "static/media/WarmUpWarm.png": "/static/media/WarmUpWarm.74abe2278977582370f4.png",
+    "static/media/Salar.png": "/static/media/Salar.f092fb4f7557b18af0e1.png",
+    "static/media/SubscribeGraphic.png": "/static/media/SubscribeGraphic.8859cae1c2fd5ba12851.png",
+    "index.html": "/index.html",
+    "main.4d707d19.css.map": "/static/css/main.4d707d19.css.map",
+    "main.811710e6.js.map": "/static/js/main.811710e6.js.map"
   },
   "entrypoints": [
     "static/css/main.4d707d19.css",
-    "static/js/main.0d212b52.js"
+    "static/js/main.811710e6.js"
   ]
 }
