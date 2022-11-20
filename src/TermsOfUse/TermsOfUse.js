@@ -23,11 +23,11 @@ const TermsOfUse = () => {
   return (
     <div className='flex flex-col w-full h-screen'>
 
-      <div className="Header flex flex-row h-[100px] w-full px-20 items-center justify-between bg-[#ffffff]" style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.06)' }}>
+      <div className="Header flex flex-row h-[100px] w-full px-5 lg:px-20 items-center justify-between bg-[#ffffff]" style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.06)' }}>
         <a href="/" className=" cursor-pointer">
           <Logo />
         </a>
-        <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[14px] px-[46px] rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
+        <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[14px] px-[20px] sm:px-[46px] rounded-[4px] sm:rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
         <Dialog
           open={open}
           TransitionComponent={Transition}
@@ -43,12 +43,12 @@ const TermsOfUse = () => {
             <input className='flex text-base font-Mulish pt-[20px] pb-[8px] w-full outline-none border-b-2' placeholder='Enter your email address' />
           </DialogContent>
           <DialogActions>
-            <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[14px] px-[46px] rounded-[10px] font-Mulish">Subscribe</button>
+            <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[14px] px-[20px] sm:px-[46px] rounded-[4px] sm:rounded-[10px] font-Mulish">Subscribe</button>
           </DialogActions>
         </Dialog>
       </div>
-      <div className="Fold1 flex flex-col h-full max-w-[740px] px-20 items-center mt-20 m-auto">
-        <h1 className=' text-[46px] font-bold font-Mulish'>Escapekar Terms of Use</h1>
+      <div className="Fold1 flex flex-col h-full max-w-[300px] md:max-w-[600px] lg:max-w-[740px] px-5 lg:px-20 items-center mt-5 lg:mt-20 m-auto">
+        <h1 className='text-[32px] md:text-[46px] text-center lg:text-right font-bold font-Mulish'>Escapekar Terms of Use</h1>
       </div>
     </div>
   );
