@@ -89,7 +89,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col items-center lg:items-end lg:justify-center w-[100%] lg:w-[50%] mt-6 lg:mt-[0]">
+          <div className="flex flex-col items-center lg:items-end lg:justify-center w-[100%] lg:w-[50%] mt-6 lg:mt-4">
             <TravelGraphic />
           </div>
         </div>
@@ -99,30 +99,30 @@ const Home = () => {
         <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-5 lg:mt-0 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
         <div className='Cards flex flex-wrap flex-col justify-center md:flex-row gap-5 md:gap-3 lg:gap-5 pt-9 lg:pt-0'>
           <div className='Card flex flex-col h-[420px] w-[240px] lg:h-[540px] lg:w-[360px] items-center justify-end rounded-[30px] md:rounded-[30px] bg-[#ffffff]'>
-            <div className='flex flex-col justify-center items-center h-[167px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#FEF4E2] rounded-t-[30px] p-3 lg:p-0'>
+            <div className='flex flex-col justify-center items-center h-[200px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#FEF4E2] rounded-t-[30px] p-3 lg:p-0'>
               <img src={AllAtOnePlace} alt="All At One Place" />
             </div>
-            <div className='flex flex-col min-h-[253px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
-              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[28px] mb-[10px]'>All At One Place</p>
-              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[59px]'>Get your flight, hotel, reservations etc all at one place</p>
+            <div className='flex flex-col min-h-[200px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
+              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[18px] mb-[10px]'>All At One Place</p>
+              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[50px]'>Get your flight, hotel, reservations etc all at one place</p>
             </div>
           </div>
           <div className='Card flex flex-col h-[420px] w-[240px] lg:h-[540px] lg:w-[360px] items-center justify-end rounded-[30px] md:rounded-[30px] bg-[#ffffff]'>
-            <div className='flex flex-col justify-center items-center h-[167px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#F3E9FF] rounded-t-[30px] p-3 lg:p-0'>
+            <div className='flex flex-col justify-center items-center h-[200px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#F3E9FF] rounded-t-[30px] p-3 lg:p-0'>
               <img src={BestRecommendations} alt="Best Recommendations" />
             </div>
-            <div className='flex flex-col min-h-[253px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
-              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[28px] mb-[10px]'>Best Recommendations</p>
-              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[59px]'>Personalised suggestions for your trip, find hidden places & many more</p>
+            <div className='flex flex-col min-h-[200px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
+              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[18px] mb-[10px]'>Best Recommendations</p>
+              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[50px]'>Personalised suggestions for your trip, find hidden places & many more</p>
             </div>
           </div>
           <div className='Card flex flex-col h-[420px] w-[240px] lg:h-[540px] lg:w-[360px] items-center justify-end rounded-[30px] md:rounded-[30px] bg-[#ffffff]'>
-            <div className='flex flex-col justify-center items-center h-[167px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#E9F7F4] rounded-t-[30px] p-3 lg:p-0'>
+            <div className='flex flex-col justify-center items-center h-[200px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#E9F7F4] rounded-t-[30px] p-3 lg:p-0'>
               <img src={OptimiseRoute} alt="Optimise Route" />
             </div>
-            <div className='flex flex-col min-h-[253px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
-              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[28px] mb-[10px]'>Optimise Your Route</p>
-              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[59px]'>Find the shortest route for your trip while saving your time & money.</p>
+            <div className='flex flex-col min-h-[200px] lg:min-h-auto justify-center items-center px-[32px] m-auto'>
+              <p className=' text-xl lg:text-2xl font-bold font-Mulish text-center mt-[18px] mb-[10px]'>Optimise Your Route</p>
+              <p className='text-[16px] font-medium leading-[25px] font-Mulish text-[#323232] text-center pb-[50px]'>Find the shortest route for your trip while saving your time & money.</p>
             </div>
           </div>
         </div>
