@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a583407.css",
-    "main.js": "/static/js/main.84733ef0.js",
+    "main.css": "/static/css/main.ac31d21e.css",
+    "main.js": "/static/js/main.41588fc2.js",
     "static/media/Map.png": "/static/media/Map.5667eac54db855e28b6a.png",
     "static/media/Sunken.png": "/static/media/Sunken.b8a03ff8dd4fb296f830.png",
     "static/media/Montreal.png": "/static/media/Montreal.79bbb973b8bca6eb7cda.png",
+    "static/media/OptimiseRoute.svg": "/static/media/OptimiseRoute.5d8c724edbe56725e95c09399f1eb5af.svg",
     "static/media/WarmUpWarm.png": "/static/media/WarmUpWarm.74abe2278977582370f4.png",
+    "static/media/AllAtOnePlace.svg": "/static/media/AllAtOnePlace.f819d1e1fdab9261cbfa2713e062d3d3.svg",
     "static/media/Salar.png": "/static/media/Salar.f092fb4f7557b18af0e1.png",
     "static/media/SubscribeGraphic.png": "/static/media/SubscribeGraphic.8859cae1c2fd5ba12851.png",
+    "static/media/BestRecommendations.svg": "/static/media/BestRecommendations.8040ef33c930d0e4703e138104891001.svg",
     "index.html": "/index.html",
-    "main.2a583407.css.map": "/static/css/main.2a583407.css.map",
-    "main.84733ef0.js.map": "/static/js/main.84733ef0.js.map"
+    "main.ac31d21e.css.map": "/static/css/main.ac31d21e.css.map",
+    "main.41588fc2.js.map": "/static/js/main.41588fc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a583407.css",
-    "static/js/main.84733ef0.js"
+    "static/css/main.ac31d21e.css",
+    "static/js/main.41588fc2.js"
   ]
 }
