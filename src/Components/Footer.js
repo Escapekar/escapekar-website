@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="Footer flex flex-col h-full lg:h-[298px] w-full justify-between bg-[#FAFAFA]">
         <div className='flex flex-col lg:flex-row h-full items-center justify-center lg:justify-between  px-[80px] pt-[32px] lg:pt-0'>
           <div className='flex flex-col items-center justify-start'>
-            <a href="/" className="ml-6 sm:ml-0 cursor-pointer">
+            <a href="/" className=" cursor-pointer">
               <Logo />
             </a>
           </div>

@@ -39,12 +39,12 @@ const Home = () => {
 
   return (
     <>
-      <div className="Home flex flex-col min-h-screen h-full w-full px-5 sm:px-20 justify-between bg-gradient-to-b from-[#E2FFF8] to-[#f1f1f1] ">
-        <div className="Header flex flex-row justify-between items-center pt-5 sm:pt-9">
-          <a href="/" className=" cursor-pointer">
+      <div className="Home flex flex-col min-h-screen h-full w-full px-5 sm:px-10 lg:px-20 justify-between bg-gradient-to-b from-[#E2FFF8] to-[#f1f1f1] ">
+        <div className="Header flex flex-row justify-center md:justify-between items-center pt-5 sm:pt-9">
+          <a href="/" className="w-[70%] md:w-full cursor-pointer self-center m-0">
             <Logo />
           </a>
-          <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[4px] sm:rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
+          <button className="bg-[#20B08F] hidden md:flex hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[4px] sm:rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
           <Dialog
             open={open}
             TransitionComponent={Transition}
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
         <div className="MainTag flex flex-col lg:flex-row items-center pb-[30px] lg:pb-[67px]">
           <div className="HomeText flex flex-col w-[100%] lg:w-[50%] mt-2 lg:mt-[0]">
-            <h1 className="text-[36px] leading-[70px] md:text-[56px] font-extrabold max-w-[581px] lg:max-w-none mb-5 font-Mulish">Let’s explore, create<br />and manage trip<br /><span className=" text-red-500">for free</span></h1>
+            <h1 className="text-[36px] md:leading-[70px] md:text-[56px] font-extrabold max-w-[581px] lg:max-w-none mb-5 font-Mulish">Let’s explore, create<br />and manage trip<br /><span className=" text-red-500">for free</span></h1>
             <p className=" text-xl md:text-2xl lg:text-base font-normal max-w-[533px] mb-8 font-Mulish text-[#00000080]">For many people organising trip is a headache, we made it easy for you plus we won’t charge you for that</p>
             <div className="flex flex-row items-center gap-4">
               <a alt="Play Store" href="https://play.google.com/">
@@ -95,8 +95,8 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold2 flex flex-col min-h-screen md:min-h-fit lg:min-h-screen h-full w-full px-5 lg:px-20 items-center pb-10 md:pb-20 lg:pb-[140px]">
-        <h2 className='text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-6 lg:mt-20'>What We Got For You</h2>
-        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-5 lg:mt-0 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
+        <h2 className='text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-12 lg:mt-20'>What We Got For You</h2>
+        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
         <div className='Cards flex flex-wrap flex-col justify-center md:flex-row gap-5 md:gap-3 lg:gap-5 pt-9 lg:pt-0'>
           <div className='Card flex flex-col h-[420px] w-[240px] lg:h-[540px] lg:w-[360px] items-center justify-end rounded-[30px] md:rounded-[30px] bg-[#ffffff]'>
             <div className='flex flex-col justify-center items-center h-[200px] lg:h-[360px] w-[240px] lg:w-[360px] bg-[#FEF4E2] rounded-t-[30px] p-3 lg:p-0'>
@@ -128,25 +128,25 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold3 flex flex-col h-full lg:min-h-[700px] w-full px-5 lg:px-20 items-center bg-[#105847] pb-10 md:pb-20 lg:pb-5">
-        <h2 className=' text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-6 lg:mt-20 text-[#ffffff]'>What We Got For You</h2>
-        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-5 lg:mt-0 mb-20 text-[#ffffff80]'>All the hidden spots will be on your finger tips</p>
+        <h2 className=' text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-12 lg:mt-20 text-[#ffffff]'>What We Got For You</h2>
+        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-20 text-[#ffffff80]'>All the hidden spots will be on your finger tips</p>
         <div className='Cards flex flex-col md:flex-row gap-20 lg:gap-28 md:flex-wrap lg:flex-initial md:justify-center'>
-          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mt-4 lg:mt-24'>
+          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mt-4 ml-5 lg:ml-0 lg:mt-24'>
             <img alt="Scene" src={Travel1} className=" mb-5" />
             <p className='text-base font-bold font-Mulish text-[#ffffff]'>Salar de Uyuni</p>
             <p className='text-base font-semibold font-Mulish text-[#ffffff80]'>Bolivia</p>
           </div>
-          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px]'>
+          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mr-5 lg:mr-0'>
             <img alt="Scene" src={Travel2} className=" mb-5" />
             <p className='text-base font-bold font-Mulish text-[#ffffff]'>Montreal Garden</p>
             <p className='text-base font-semibold font-Mulish text-[#ffffff80]'>Canada</p>
           </div>
-          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mt-0 lg:mt-24'>
+          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mt-0 ml-5 lg:ml-0 lg:mt-24'>
             <img alt="Scene" src={Travel3} className=" mb-5" />
             <p className='text-base font-bold font-Mulish text-[#ffffff]'>Wrap Up Warm</p>
             <p className='text-base font-semibold font-Mulish text-[#ffffff80]'>Bolivia</p>
           </div>
-          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px]'>
+          <div className='Card flex flex-col h-[290px] w-[220px] items-center justify-end rounded-[20px] mr-5 lg:mr-0'>
             <img alt="Scene" src={Travel4} className=" mb-5" />
             <p className='text-base font-bold font-Mulish text-[#ffffff]'>Sunken Cave</p>
             <p className='text-base font-semibold font-Mulish text-[#ffffff80]'>Yucatan, Mexico</p>
@@ -154,8 +154,8 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold4 flex flex-col h-full w-full px-5 lg:px-20 items-center pb-10 md:pb-20 lg:pb-0 bg-[#fff]">
-        <h2 className=' text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-6 lg:mt-20'>Across the World</h2>
-        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-5 lg:mt-0 mb-5 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
+        <h2 className=' text-[24px] lg:text-[46px] font-extrabold font-Mulish mt-12 lg:mt-20'>Across the World</h2>
+        <p className='text-[18px] md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-5 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
         <img alt="Map" src={Map} />
       </div>
       <div className="Fold5 flex flex-col h-full w-full px-5 lg:px-20 items-center pb-[50px] lg:pb-[100px] bg-[#fff]">

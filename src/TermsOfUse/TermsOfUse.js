@@ -25,7 +25,7 @@ const TermsOfUse = () => {
   return (
     <div id="terms-of-use-id" className='flex flex-col w-full h-full'>
       <div className="Header flex flex-row h-[100px] w-full px-5 py-4 lg:px-20 items-center justify-between bg-[#ffffff]" style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.06)' }}>
-        <a href="/" className=" cursor-pointer">
+        <a href="/" className="w-[60%] cursor-pointer">
           <Logo />
         </a>
         <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[4px] sm:rounded-[10px] font-Mulish" onClick={handleClickOpen}>Subscribe</button>
