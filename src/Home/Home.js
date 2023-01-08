@@ -65,7 +65,7 @@ const Home = () => {
           </Dialog>
         </div>
         <div className="MainTag flex flex-col lg:flex-row items-center pb-[30px] lg:pb-[67px]">
-          <div className="HomeText flex flex-col w-[100%] lg:w-[50%] mt-2 lg:mt-[0]">
+          <div className="HomeText flex flex-col w-[100%] lg:w-[50%] mt-8 lg:mt-[0]">
             <h1 className="text-[36px] md:leading-[70px] md:text-[56px] font-extrabold max-w-[581px] lg:max-w-none mb-5 font-Mulish">Let’s explore, create<br />and manage trip<br /><span className=" text-red-500">for free</span></h1>
             <p className=" text-xl md:text-2xl lg:text-base font-normal max-w-[533px] mb-8 font-Mulish text-[#00000080]">For many people organising trip is a headache, we made it easy for you plus we won’t charge you for that</p>
             <div className="flex flex-row items-center gap-4">
