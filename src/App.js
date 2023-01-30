@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="App flex flex-col h-full box-border bg-[#fafafa]">
+    <div className="App flex flex-col h-full box-border bg-[#fafafa] overflow-x-hidden">
       <Router>
       <ScrollToTop />
         <Routes>
