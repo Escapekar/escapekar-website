@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ca86699f.css",
-    "main.js": "/static/js/main.7a62f77a.js",
+    "main.js": "/static/js/main.2fc840cb.js",
     "static/media/Map.png": "/static/media/Map.5667eac54db855e28b6a.png",
     "static/media/Sunken.png": "/static/media/Sunken.b8a03ff8dd4fb296f830.png",
     "static/media/Montreal.png": "/static/media/Montreal.79bbb973b8bca6eb7cda.png",
@@ -17,10 +17,10 @@
     "static/media/Compass.svg": "/static/media/Compass.e515b71e9ea79ae799428f9d114a1bae.svg",
     "index.html": "/index.html",
     "main.ca86699f.css.map": "/static/css/main.ca86699f.css.map",
-    "main.7a62f77a.js.map": "/static/js/main.7a62f77a.js.map"
+    "main.2fc840cb.js.map": "/static/js/main.2fc840cb.js.map"
   },
   "entrypoints": [
     "static/css/main.ca86699f.css",
-    "static/js/main.7a62f77a.js"
+    "static/js/main.2fc840cb.js"
   ]
 }
