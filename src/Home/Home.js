@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -8,6 +8,9 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Logo from '../Assets/Logo';
 import Cross from '../Assets/Cross';
@@ -34,9 +37,15 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Home = () => {
 
   const [open, setOpen] = React.useState(false);
+  const imgRef1 = useRef(null);
+  const imgRef2 = useRef(null);
+  const imgRef3 = useRef(null);
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -45,6 +54,22 @@ const Home = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  
+  useEffect(() => {
+    const el1 =imgRef1.current;
+    const el2 =imgRef2.current;
+    const el3 =imgRef3.current;
+    gsap.fromTo(el1, {rotation: -50}, {rotation: 0, duration: 4, scrollTrigger: {
+      trigger: el1
+    }})
+    gsap.fromTo(el2, {rotation: -20}, {rotation: 0, duration: 4, scrollTrigger: {
+      trigger: el2
+    }})
+    gsap.fromTo(el3, {rotation: -50}, {rotation: 0, duration: 4, scrollTrigger: {
+      trigger: el3
+    }})
+  }, [])
+  
 
   return (
     <>
@@ -114,7 +139,7 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold2 relative flex flex-col min-h-screen md:min-h-fit lg:min-h-screen h-full w-full px-5 lg:px-20 items-center pb-16 md:pb-20 lg:pb-[140px]">
-      <img src={Compass2} alt="Compass" className='hidden lg:flex absolute top-[0%] -right-[6%]' />
+      <img ref={imgRef1} src={Compass2} alt="Compass" className='hidden lg:flex absolute top-[0%] -right-[6%]' />
         <h2 className='text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20'>What We Got For You</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
         <div className='Cards flex flex-wrap flex-col justify-center md:flex-row gap-5 md:gap-3 lg:gap-5 pt-12 lg:pt-0'>
@@ -148,7 +173,7 @@ const Home = () => {
         </div>
       </div >
       <div className="Fold3 relative flex flex-col h-full lg:min-h-[800px] w-full px-5 lg:px-20 items-center bg-[#105847] pb-16 md:pb-20 lg:pb-5">
-      <img src={HotAirBalloon} alt="Hot Air Balloon" className='hidden lg:flex absolute -top-[12%] left-[2%]' />
+      <img ref={imgRef2} src={HotAirBalloon} alt="Hot Air Balloon" className='hidden lg:flex absolute -top-[12%] left-[2%]' />
         <h2 className=' text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20 text-[#ffffff]'>Look for hidden spots</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-28 lg:mb-28 text-[#ffffff80]'>All the hidden spots will be on your finger tips</p>
         <div className='Cards flex flex-row gap-10 md:gap-16 lg:gap-28 flex-wrap lg:flex-initial justify-center'>
@@ -175,7 +200,7 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold4 relative flex flex-col h-full w-full items-center pb-0 md:pb-20 lg:pb-0 bg-[#fff]">
-      <img src={Compass} alt="Compass" className='hidden lg:flex absolute w-[113px] h-[123.24px] -top-[9%] left-[45%]' />
+      <img ref={imgRef3} src={Compass} alt="Compass" className='hidden lg:flex absolute w-[113px] h-[123.24px] -top-[9%] left-[45%]' />
         <h2 className=' text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20 px-5 lg:px-20'>Across the World</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-9 lg:mb-20 text-[#00000080] px-5 lg:px-20'>Enjoy different experiences in every place you visit</p>
         <div alt="Map" style={{
