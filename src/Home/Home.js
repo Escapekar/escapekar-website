@@ -119,7 +119,7 @@ const Home = () => {
             <h1 className="text-[26px] leading-[36px] md:leading-[70px] md:text-[56px] font-bold max-w-[581px] lg:max-w-none mb-5 font-Mulish text-center md:text-left">Let’s explore, create and manage trip <span className="lg:block text-red-500">for free</span></h1>
             <p className=" text-base md:text-2xl lg:text-base font-normal max-w-[533px] mb-10 font-Mulish text-[#00000080] text-center md:text-left">For many people organising trip is a headache, we made it easy for you plus we won’t charge you for that</p>
             <div className="flex flex-row items-center gap-[10px]">
-              <a alt="Play Store" href="https://play.google.com/store/apps/details?id=com.escapekar.escapekar">
+              <a alt="Play Store" rel="noreferrer" target='_blank' href="https://play.google.com/store/apps/details?id=com.escapekar.escapekar">
                 <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                   <img alt="Google play" src={Android} className='my-2' />
                   <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
@@ -128,7 +128,7 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <a alt="App Store" href="https://apps.apple.com/in/app/escapekar-trip-planner/id6446503558">
+              <a alt="App Store" rel="noreferrer" target='_blank' href="https://apps.apple.com/in/app/escapekar-trip-planner/id6446503558">
                 <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                   <img alt="App Store" src={Apple} className='my-1' width="20%" />
                   <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
