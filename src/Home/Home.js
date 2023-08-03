@@ -1,5 +1,5 @@
 
-import React, {useRef, useEffect} from 'react';
+import React, { useRef, useEffect } from 'react';
 
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -54,22 +54,28 @@ const Home = () => {
   const handleClose = () => {
     setOpen(false);
   };
-  
+
   useEffect(() => {
-    const el1 =imgRef1.current;
-    const el2 =imgRef2.current;
-    const el3 =imgRef3.current;
-    gsap.fromTo(el1, {rotation: -50}, {rotation: 0, duration: 4, scrollTrigger: {
-      trigger: el1
-    }})
-    gsap.fromTo(el2, {rotation: -20}, {rotation: 0, duration: 4, scrollTrigger: {
-      trigger: el2
-    }})
-    gsap.fromTo(el3, {rotation: -50}, {rotation: 0, duration: 4, scrollTrigger: {
-      trigger: el3
-    }})
+    const el1 = imgRef1.current;
+    const el2 = imgRef2.current;
+    const el3 = imgRef3.current;
+    gsap.fromTo(el1, { rotation: -50 }, {
+      rotation: 0, duration: 4, scrollTrigger: {
+        trigger: el1
+      }
+    })
+    gsap.fromTo(el2, { rotation: -20 }, {
+      rotation: 0, duration: 4, scrollTrigger: {
+        trigger: el2
+      }
+    })
+    gsap.fromTo(el3, { rotation: -50 }, {
+      rotation: 0, duration: 4, scrollTrigger: {
+        trigger: el3
+      }
+    })
   }, [])
-  
+
 
   return (
     <>
@@ -80,40 +86,40 @@ const Home = () => {
           </a>
           <button className="bg-[#20B08F] hidden md:flex hover:bg-[#1b967a] text-white text-base font-bold py-[8px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[8px] sm:rounded-[10px] font-Mulish transition duration-500 ease-in-out hover:scale-105" onClick={handleClickOpen}>Subscribe</button>
           <Dialog
-          open={open}
-          TransitionComponent={Transition}
-          onClose={handleClose}
-          aria-describedby="alert-dialog-slide-description"
-        >
-          <DialogTitle className='relative !pb-[6px]'><p className=' text-2xl text-center lg:text-left font-semibold font-Mulish mt-3'>{"Subscribe"}</p>
-            <Cross onClick={() => setOpen(false)} />
-          </DialogTitle>
-          <DialogContent>
-            <p className='text-sm lg:text-base text-center lg:text-left font-normal font-Mulish mb-8' id="alert-dialog-slide-description">
-              Let's get connected for more enhanced experience
-            </p>
-            {/* <input className='flex text-base font-Mulish py-[12px] w-full outline-none bg-[#f6f6f6] px-2 border-default rounded-[8px]' placeholder='Enter your email address' /> */}
-            <TextField
-              placeholder='Enter your email address'
-              id="outlined-start-adornment"
-              variant='outlined'
-              className="flex text-base font-Mulish py-[12px] w-full outline-none bg-[#f6f6f6] px-2 border-0 rounded-[8px]"
-              InputProps={{
-                startAdornment: <InputAdornment position="start"><Mail /></InputAdornment>,
-              }}
-            />
-          </DialogContent>
-          <DialogActions style={{ justifyContent: 'center' }}>
-            <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[10px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[8px] sm:rounded-[10px] font-Mulish mb-3">Subscribe</button>
-          </DialogActions>
-        </Dialog>
+            open={open}
+            TransitionComponent={Transition}
+            onClose={handleClose}
+            aria-describedby="alert-dialog-slide-description"
+          >
+            <DialogTitle className='relative !pb-[6px]'><p className=' text-2xl text-center lg:text-left font-semibold font-Mulish mt-3'>{"Subscribe"}</p>
+              <Cross onClick={() => setOpen(false)} />
+            </DialogTitle>
+            <DialogContent>
+              <p className='text-sm lg:text-base text-center lg:text-left font-normal font-Mulish mb-8' id="alert-dialog-slide-description">
+                Let's get connected for more enhanced experience
+              </p>
+              {/* <input className='flex text-base font-Mulish py-[12px] w-full outline-none bg-[#f6f6f6] px-2 border-default rounded-[8px]' placeholder='Enter your email address' /> */}
+              <TextField
+                placeholder='Enter your email address'
+                id="outlined-start-adornment"
+                variant='outlined'
+                className="flex text-base font-Mulish py-[12px] w-full outline-none bg-[#f6f6f6] px-2 border-0 rounded-[8px]"
+                InputProps={{
+                  startAdornment: <InputAdornment position="start"><Mail /></InputAdornment>,
+                }}
+              />
+            </DialogContent>
+            <DialogActions style={{ justifyContent: 'center' }}>
+              <button className="bg-[#20B08F] hover:bg-[#1b967a] text-white text-base font-bold py-[10px] sm:py-[10px] px-[20px] sm:px-[40px] rounded-[8px] sm:rounded-[10px] font-Mulish mb-3">Subscribe</button>
+            </DialogActions>
+          </Dialog>
         </div>
         <div className="MainTag flex flex-col lg:flex-row items-center pb-[30px] lg:pb-[67px] px-5 sm:px-10 lg:px-20">
           <div className="HomeText flex flex-col items-center lg:items-start w-[100%] lg:w-[50%] mt-12 lg:mt-[0]">
             <h1 className="text-[26px] leading-[36px] md:leading-[70px] md:text-[56px] font-bold max-w-[581px] lg:max-w-none mb-5 font-Mulish text-center md:text-left">Let’s explore, create and manage trip <span className="lg:block text-red-500">for free</span></h1>
             <p className=" text-base md:text-2xl lg:text-base font-normal max-w-[533px] mb-10 font-Mulish text-[#00000080] text-center md:text-left">For many people organising trip is a headache, we made it easy for you plus we won’t charge you for that</p>
             <div className="flex flex-row items-center gap-[10px]">
-              <a alt="Play Store" href="https://play.google.com/">
+              <a alt="Play Store" href="https://play.google.com/store/apps/details?id=com.escapekar.escapekar">
                 <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                   <img alt="Google play" src={Android} className='my-2' />
                   <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
@@ -122,7 +128,7 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <a alt="Play Store" href="https://www.apple.com/in/app-store/">
+              <a alt="App Store" href="https://apps.apple.com/in/app/escapekar-trip-planner/id6446503558">
                 <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                   <img alt="App Store" src={Apple} className='my-1' width="20%" />
                   <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
@@ -139,7 +145,7 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold2 relative flex flex-col min-h-screen md:min-h-fit lg:min-h-screen h-full w-full px-5 lg:px-20 items-center pb-16 md:pb-20 lg:pb-[140px]">
-      <img ref={imgRef1} src={Compass2} alt="Compass" className='hidden lg:flex absolute top-[0%] -right-[6%]' />
+        <img ref={imgRef1} src={Compass2} alt="Compass" className='hidden lg:flex absolute top-[0%] -right-[6%]' />
         <h2 className='text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20'>What We Got For You</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 lg:mb-20 text-[#00000080]'>Enjoy different experiences in every place you visit</p>
         <div className='Cards flex flex-wrap flex-col justify-center md:flex-row gap-5 md:gap-3 lg:gap-5 pt-12 lg:pt-0'>
@@ -173,7 +179,7 @@ const Home = () => {
         </div>
       </div >
       <div className="Fold3 relative flex flex-col h-full lg:min-h-[800px] w-full px-5 lg:px-20 items-center bg-[#105847] pb-16 md:pb-20 lg:pb-5">
-      <img ref={imgRef2} src={HotAirBalloon} alt="Hot Air Balloon" className='hidden lg:flex absolute -top-[12%] left-[2%]' />
+        <img ref={imgRef2} src={HotAirBalloon} alt="Hot Air Balloon" className='hidden lg:flex absolute -top-[12%] left-[2%]' />
         <h2 className=' text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20 text-[#ffffff]'>Look for hidden spots</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-28 lg:mb-28 text-[#ffffff80]'>All the hidden spots will be on your finger tips</p>
         <div className='Cards flex flex-row gap-10 md:gap-16 lg:gap-28 flex-wrap lg:flex-initial justify-center'>
@@ -200,16 +206,16 @@ const Home = () => {
         </div>
       </div>
       <div className="Fold4 relative flex flex-col h-full w-full items-center pb-0 md:pb-20 lg:pb-0 bg-[#fff]">
-      <img ref={imgRef3} src={Compass} alt="Compass" className='hidden lg:flex absolute w-[113px] h-[123.24px] -top-[9%] left-[45%]' />
+        <img ref={imgRef3} src={Compass} alt="Compass" className='hidden lg:flex absolute w-[113px] h-[123.24px] -top-[9%] left-[45%]' />
         <h2 className=' text-[24px] lg:text-[46px] font-bold font-Mulish mt-16 lg:mt-20 px-5 lg:px-20'>Across the World</h2>
         <p className='text-base md:text-2xl lg:text-base text-center lg:text-left font-normal font-Mulish mt-2 lg:mt-0 mb-9 lg:mb-20 text-[#00000080] px-5 lg:px-20'>Enjoy different experiences in every place you visit</p>
         <div alt="Map" style={{
           backgroundImage: `url(${Map})`
         }} className="flex md:hidden w-full h-[400px] bg-center bg-cover" />
-        <img alt="Map" src={Map} className="w-[80%] hidden md:flex"/>
+        <img alt="Map" src={Map} className="w-[80%] hidden md:flex" />
       </div>
       <div className="Fold5 relative flex flex-col h-full w-full px-0 md:px-20 items-center pb-[0] md:pb-[100px] bg-[#fff]">
-      <img src={DirectionBoard} alt="Direction Board" className='hidden lg:flex absolute bottom-[23%] left-[30%]' />
+        <img src={DirectionBoard} alt="Direction Board" className='hidden lg:flex absolute bottom-[23%] left-[30%]' />
         <div className='flex flex-col lg:flex-row h-full w-full md:w-[600px] lg:h-[344px] lg:w-[1000px] px-[20px] lg:px-[110px] pt-[60px] pb-[80px] lg:pt-[40px] lg:pb-[40px] bg-[#F9E5C8] rounded-none md:rounded-[68px]'>
           <img alt="Subscribe" src={Subscribe} className='w-[100%] md-[50%] lg:w-[50%] ml-5 lg:ml-0 my-5 lg:my-0 z-[10]' />
           <div className='flex flex-col items-center justify-center'>

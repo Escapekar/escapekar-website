@@ -21,7 +21,7 @@ const Footer = () => {
             </a>
           </div>
           <div className='flex flex-col lg:flex-row items-center lg:items-start justify-between w-auto lg:w-[55%]'>
-          <div className='flex flex-col items-center lg:items-start mt-[0px] lg:mt-0 gap-[24px] lg:gap-[20px]'>
+            <div className='flex flex-col items-center lg:items-start mt-[0px] lg:mt-0 gap-[24px] lg:gap-[20px]'>
               <p className='hidden lg:flex text-[18px] font-bold leading-[28px] font-Mulish mb-1 lg:mb-0'>Quick Links</p>
               <Link to="/terms-of-use" className=' text-[16px] md:text-2xl lg:text-base font-normal font-Mulish text-[#999999] hover:text-[#333333] mb-1 lg:mb-0'>Terms Of Use</Link>
               <Link to="/privacy-policy/#privacy-policy-id" className=' text-[16px] md:text-2xl lg:text-base font-normal font-Mulish text-[#999999] hover:text-[#333333] mb-1 lg:mb-0'>Privacy Policy</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
             <div className='flex flex-col items-center lg:items-start justify-end mt-[24px] lg:mt-0 mb-[28px] pt-[20px] lg:pt-0 border-t lg:border-t-0 border-t-[#F1F1F1]'>
               <p className='text-[18px] font-bold leading-[28px] font-Mulish mb-[16px] lg:mb-[24px]'>Download App</p>
               <div className="flex flex-row items-center gap-[10px]">
-                <a alt="Play Store" href="https://play.google.com/">
+                <a alt="Play Store" href="https://play.google.com/store/apps/details?id=com.escapekar.escapekar">
                   <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                     <img alt="Google play" src={Android} className='my-2' />
                     <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </a>
-                <a alt="Play Store" href="https://www.apple.com/in/app-store/">
+                <a alt="App Store" href="https://apps.apple.com/in/app/escapekar-trip-planner/id6446503558">
                   <div className='flex flex-row h-[42px] w-[128px] md:h-[48px] md:w-[160px] bg-[#000000] rounded-[10px] cursor-pointer justify-center transition duration-500 ease-in-out hover:scale-105'>
                     <img alt="App Store" src={Apple} className='my-1' width="20%" />
                     <div className='flex flex-col items-start justify-center ml-[4px] md:ml-[10px] py-1 md:py-3'>
